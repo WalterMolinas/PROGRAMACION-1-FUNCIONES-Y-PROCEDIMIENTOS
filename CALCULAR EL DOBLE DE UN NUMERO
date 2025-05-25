@@ -1,0 +1,14 @@
+#include <stdio.h>
+/*Escriba una función llamada doble que reciba un número entero y devuelva su doble.
+El programa principal debe pedir un número al usuario, llamar a la función y mostrar el resultado.*/
+int doble(int a){
+	return a*2;
+}
+	int main() {
+		int x,result;
+		printf("Ingrese un valor y este programa devolvera el valor multiplicado por 2\n");
+		scanf("%d", &x);
+		result = doble(x);
+		printf("El resultado de la opreacion es %d",result);
+		return 0;
+	}
