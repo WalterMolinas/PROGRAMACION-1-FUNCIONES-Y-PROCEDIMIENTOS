@@ -1,0 +1,44 @@
+#include <stdio.h>
+/*Crear un programa que realiza las 3 operaciones básicas(suma, resta y multiplicación) al ingresar dos números y la operación a realizar.*/
+int suma(int a, int b){
+	int resultado;
+		resultado=a+b;
+	return resultado ;
+}
+	int resta(int a, int b){
+		int resultado;
+		resultado=a-b;
+		return resultado ;
+	}
+
+		int multiplicar(int a, int b){
+			int resultado;
+			resultado=a*b;
+			return resultado ;
+		}
+	int main() {
+		int x,y,result,opcion;
+		printf("Ingrese primer valor\n");
+		scanf("%d", &x);
+		printf("Ingrese segundo valor\n");
+		scanf("%d", &y);
+		printf("Elija la opcion que desea realizar con los valores\n1-Suma\n2-Resta\n3-Multiplicacion\n");
+		scanf("%d",&opcion);
+		switch(opcion){
+		case 1:
+			result=suma(x,y);
+			printf("El resultado de la suma es: %d",result);
+			break;
+		case 2:
+			result=resta(x,y);
+			printf("El resultado de la resta es: %d",result);
+			break;
+		case 3:
+			result=multiplicar(x,y);
+			printf("El resultado de la multiplicacion es: %d",result);
+			break;
+		default:
+			printf("ERROR EN OPCION");
+		}
+		return 0;
+	}
