@@ -1,0 +1,20 @@
+#include <stdio.h>
+/*Escriba una función potencia que reciba dos enteros base y exponente, y devuelva base elevado a la exponente (sin usar pow()).*/
+int potencia(int a, int b){
+	int resultado=1;
+	for(int i=0;i<b;i++){
+		resultado=resultado*a;
+	}
+	return resultado ;
+}
+	int main() {
+		int x,y,result;
+		printf("Ingrese el valor de la base\n");
+		scanf("%d", &x);
+		printf("Ingrese el valor de la potencia\n");
+		scanf("%d", &y);
+		result=potencia(x,y);
+		printf("El resultado de la potencia es es %d",result);
+		return 0;
+	}
+	
